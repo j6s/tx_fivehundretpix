@@ -2,11 +2,16 @@
 <f:section name="main">
 
 <f:flashMessages />
-<f:debug>{_all}</f:debug>
 
-<f:for each="{photos}" as="photo">
-	<img src="{photo.image_url}" />
-</f:for>
+<div class="tx_fivehundretpix_photowall">
+	<f:for each="{photos}" as="photo">
+		<a href="http://500px.com/photo/{photo.id}">
+			<div class="tx_fivehundretpix_photowrapper">
+				<div class="tx_fivehundretpix_photo" style="background-image:url({photo.image_url})" ></div>
+			</div>
+		</a>
+	</f:for>
+</div>
 
 
 </f:section>

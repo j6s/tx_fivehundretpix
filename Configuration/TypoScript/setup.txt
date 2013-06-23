@@ -24,16 +24,21 @@ plugin.tx_fivehundretpix._CSS_DEFAULT_STYLE (
 		border: 1px #FF0000 solid;
 	}
 
-	.tx-fivehundretpix table {
-		border-collapse:separate;
-		border-spacing:10px;
+
+	.tx_fivehundretpix_photowrapper {
+		height:300px;
+		width:300px;
+		display:inline-block;
+		margin:20px;
 	}
 
-	.tx-fivehundretpix table th {
-		font-weight:bold;
-	}
+	.tx_fivehundretpix_photowrapper:nth-child(even) {float:right;}
+	.tx_fivehundretpix_photowrapper:nth-child(odd) {float:left;}
 
-	.tx-fivehundretpix table td {
-		vertical-align:top;
+
+	.tx_fivehundretpix_photo{
+		width:100%;
+		height:100%;
+		background-size: cover;
 	}
 )
