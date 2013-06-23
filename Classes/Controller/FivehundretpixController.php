@@ -36,7 +36,7 @@ class FivehundretpixController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionC
 	private $five00Px;
 
 	function __construct(){
-		require_once(\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath("fivehundretpix")."Classes/Api/Five00PxPubClient.php");
+		// require_once(\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath("fivehundretpix")."Classes/Api/Five00PxPubClient.php");
 		// API options
 		$options = array(
 			'key' => 'rz5QRsX4naJhxpTdvIw5DJdTCkgicJive9KMiRWR',
@@ -44,7 +44,7 @@ class FivehundretpixController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionC
 		);
 
 		// Initialize Cient
-		$this->five00Px = \TYPO3\Fivehundretpix\Api\Five00PxPubClient::factory($options);
+		$this->five00Px = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance("TYPO3\Fivehundretpix\Api\Five00PxPubClient")->factory($options);
 	}
 
 
