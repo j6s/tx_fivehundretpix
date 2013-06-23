@@ -1,0 +1,12 @@
+<f:layout name="Default" />
+<f:section name="main">
+
+<f:flashMessages />
+<f:debug>{_all}</f:debug>
+
+<f:for each="{photos}" as="photo">
+	<img src="{photo.image_url}" />
+</f:for>
+
+
+</f:section>

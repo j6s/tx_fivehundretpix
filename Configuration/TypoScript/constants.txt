@@ -1,0 +1,14 @@
+plugin.tx_fivehundretpix {
+	view {
+		# cat=plugin.tx_fivehundretpix/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:fivehundretpix/Resources/Private/Templates/
+		# cat=plugin.tx_fivehundretpix/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:fivehundretpix/Resources/Private/Partials/
+		# cat=plugin.tx_fivehundretpix/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:fivehundretpix/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_fivehundretpix//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}
