@@ -32,7 +32,7 @@ namespace TYPO3\Fivehundretpix\Controller;
  *
  */
 class FivehundretpixController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController {
-	
+
 	private $five00Px;
 
 	function __construct(){
@@ -51,9 +51,11 @@ class FivehundretpixController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionC
 
 	public function userAction(){
 		// Search Params for the Photo
+    $username = $this->settings["username"];
+    if(empty($username)){$username = "thephpjo";}
 		$params = array (
 			"feature" => "user",
-			'username'	=> 'thephpjo',
+			'username'	=> $username,
 			'rpp'	=> 15,
 			"image_size"	=> 3,
 		);

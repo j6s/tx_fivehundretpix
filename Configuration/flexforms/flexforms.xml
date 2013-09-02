@@ -1,0 +1,27 @@
+<T3DataStructure>
+  <sheets>
+    <sDEF>
+      <ROOT>
+        <TCEforms>
+          <sheetTitle>Settings</sheetTitle>
+        </TCEforms>
+        <type>array</type>
+        <el>
+          <!-- Suchergebniss Seite ID -->
+          <settings.username>
+            <TCEforms>
+              <label>anzuzeigender Username</label>
+              <required>1</required>
+              <config>
+                <type>input</type>
+                <size>20</size>
+                <max>20</max>
+                <eval>text</eval>
+              </config>
+            </TCEforms>
+          </settings.username>
+        </el>
+      </ROOT>
+    </sDEF>
+  </sheets>
+</T3DataStructure>
