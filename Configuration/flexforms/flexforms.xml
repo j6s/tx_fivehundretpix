@@ -7,11 +7,31 @@
         </TCEforms>
         <type>array</type>
         <el>
+          <switchableControllerActions>
+            <TCEforms>
+              <label>Funktion wählen</label>
+              <onChange>reload</onChange>
+              <config>
+                <type>select</type>
+                <items>
+                  <numIndex index="1">
+                    <numIndex index="0">Nutzer anzeigen</numIndex>
+                    <numIndex index="1">Fivehundretpix->user</numIndex>
+                  </numIndex>
+                </items>
+              </config>
+            </TCEforms>
+          </switchableControllerActions>
           <!-- Suchergebniss Seite ID -->
           <settings.username>
             <TCEforms>
               <label>anzuzeigender Username</label>
               <required>1</required>
+              <displayCond>
+                <OR>
+                  <numIndex index="0">FIELD:switchableControllerActions:=:Fivehundretpix->user</numIndex>
+                </OR>
+              </displayCond>
               <config>
                 <type>input</type>
                 <size>20</size>
@@ -20,6 +40,25 @@
               </config>
             </TCEforms>
           </settings.username>
+
+          <!-- Suchergebniss Seite ID -->
+          <settings.itemNum>
+            <TCEforms>
+              <label>anzuzeigende Elemente</label>
+              <required>1</required>
+              <displayCond>
+                <OR>
+                  <numIndex index="0">FIELD:switchableControllerActions:=:Fivehundretpix->user</numIndex>
+                </OR>
+              </displayCond>
+              <config>
+                <type>input</type>
+                <size>20</size>
+                <max>20</max>
+                <eval>number</eval>
+              </config>
+            </TCEforms>
+          </settings.itemNum>
         </el>
       </ROOT>
     </sDEF>

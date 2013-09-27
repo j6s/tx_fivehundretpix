@@ -53,10 +53,14 @@ class FivehundretpixController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionC
 		// Search Params for the Photo
     $username = $this->settings["username"];
     if(empty($username)){$username = "thephpjo";}
+
+    $itemNum = $this->settings["itemNum"];
+    if(empty($itemNum)){$itemNum = 10;}
+
 		$params = array (
 			"feature" => "user",
 			'username'	=> $username,
-			'rpp'	=> 15,
+			'rpp'	=> $itemNum,
 			"image_size"	=> 3,
 		);
 
