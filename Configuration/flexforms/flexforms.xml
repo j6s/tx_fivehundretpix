@@ -3,19 +3,19 @@
     <sDEF>
       <ROOT>
         <TCEforms>
-          <sheetTitle>Settings</sheetTitle>
+          <sheetTitle>LLL:EXT:fivehundretpix/Resources/Private/Language/locallang_db.xlf:settings.settingsHeader</sheetTitle>
         </TCEforms>
         <type>array</type>
         <el>
           <switchableControllerActions>
             <TCEforms>
-              <label>Funktion wählen</label>
+              <label>LLL:EXT:fivehundretpix/Resources/Private/Language/locallang_db.xlf:settings.selectFunction</label>
               <onChange>reload</onChange>
               <config>
                 <type>select</type>
                 <items>
                   <numIndex index="1">
-                    <numIndex index="0">Nutzer anzeigen</numIndex>
+                    <numIndex index="0">LLL:EXT:fivehundretpix/Resources/Private/Language/locallang_db.xlf:settings.selectFunction.user</numIndex>
                     <numIndex index="1">Fivehundretpix->user</numIndex>
                   </numIndex>
                 </items>
@@ -25,7 +25,7 @@
           <!-- Suchergebniss Seite ID -->
           <settings.username>
             <TCEforms>
-              <label>anzuzeigender Username</label>
+              <label>LLL:EXT:fivehundretpix/Resources/Private/Language/locallang_db.xlf:settings.username</label>
               <required>1</required>
               <displayCond>
                 <OR>
@@ -44,7 +44,7 @@
           <!-- Suchergebniss Seite ID -->
           <settings.itemNum>
             <TCEforms>
-              <label>anzuzeigende Elemente</label>
+              <label>LLL:EXT:fivehundretpix/Resources/Private/Language/locallang_db.xlf:settings.itemNum</label>
               <required>1</required>
               <displayCond>
                 <OR>
