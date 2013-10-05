@@ -9,7 +9,7 @@
       </trans-unit>
       <trans-unit id="settings.selectFunction">
         <source>select Function</source>
-        <target>Funcktion wählen</target>
+        <target>Funktion wählen</target>
       </trans-unit>
       <trans-unit id="settings.selectFunction.user">
         <source>show Userpictures</source>
